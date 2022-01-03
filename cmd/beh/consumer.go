@@ -40,7 +40,8 @@ func Daemon() {
 		for _, e := range entries {
 			for _, msg := range e.Messages {
 				if !handle(&msg) {
-					// TODO:
+					log.Warn(errors.New("handle failed").As(msg))
+					continue
 				}
 
 				// confirm handle done.
