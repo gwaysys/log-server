@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS %s
 	ip char(64),
 
 	-- log date time
-	date timestamp NOT NULL,
+	date DATE NOT NULL,
 
 	-- log level
 	level INT NOT NULL,

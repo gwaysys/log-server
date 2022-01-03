@@ -23,7 +23,11 @@ func Daemon() {
 		etc.Etc.String(etcModule, "passwd"),
 	)
 	overdue := 5 * time.Minute
-	consumer, err := rmsq.NewRedisClaimConsumer(context.TODO(), rs, etc.Etc.String(etcModule, "stream-name-log"), overdue)
+	consumer, err := rmsq.NewRedisAutoConsumer(context.TODO(), rmsq.RedisAutoConsumerCfg{
+		Redis:         rs,
+		StreamName:    etc.Etc.String(etcModule, "stream-name-log"),
+		ClaimDuration: overdue,
+	})
 	if err != nil {
 		panic(err)
 	}

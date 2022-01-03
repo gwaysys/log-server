@@ -9,7 +9,7 @@ require (
 	github.com/gwaylib/database v0.0.0-20211222101134-dccf11e9bb57
 	github.com/gwaylib/errors v0.0.0-20211126090330-1931a9c4fe20
 	github.com/gwaylib/log v0.0.0-20220101113752-62331cca60a8
-	github.com/gwaylib/redis v0.0.0-20220101094530-44b7040aed7b
+	github.com/gwaylib/redis v0.0.0-20220103094709-a7211a63f0d2 // indirect
 	github.com/jmoiron/sqlx v1.3.4 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect

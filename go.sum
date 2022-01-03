@@ -27,6 +27,10 @@ github.com/gwaylib/log v0.0.0-20220101113752-62331cca60a8/go.mod h1:zq3Y/bzQMZot
 github.com/gwaylib/redis v0.0.0-20211227074640-be0f92968270/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
 github.com/gwaylib/redis v0.0.0-20220101094530-44b7040aed7b h1:sHsqsyABU0Po8DmI64d8z3R/RL37xBGRiTordakVhvs=
 github.com/gwaylib/redis v0.0.0-20220101094530-44b7040aed7b/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
+github.com/gwaylib/redis v0.0.0-20220103094108-2e135a7bd9a3 h1:00xnPudPMVBcGYPRYfBcEHXx+MQ1LpC72Xl6JdWrIEc=
+github.com/gwaylib/redis v0.0.0-20220103094108-2e135a7bd9a3/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
+github.com/gwaylib/redis v0.0.0-20220103094709-a7211a63f0d2 h1:VaoLqx/fhRsD9d6agQ6CDak6e26VHIuxKIv690bldBg=
+github.com/gwaylib/redis v0.0.0-20220103094709-a7211a63f0d2/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
 github.com/iwanbk/gobeanstalk v0.0.0-20160903043409-dbbb23937c31 h1:pYeOIZnfAA9kUZFYC6BF8iElFnmOJlfpQLTTw4ENPLM=
 github.com/iwanbk/gobeanstalk v0.0.0-20160903043409-dbbb23937c31/go.mod h1:9ERvzhQ09s9SfQ7LjjF6FwUDnfkdZJUCN3vOUE+NtP8=
 github.com/jmoiron/sqlx v1.2.0/go.mod h1:1FEQNm3xlJgrMD+FBdI9+xvCksHtbpVBBw5dYhBSsks=

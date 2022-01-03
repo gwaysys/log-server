@@ -28,7 +28,7 @@ const (
 	createBehaviorTb = `
 CREATE TABLE IF NOT EXISTS %s
 (
-    event_time TIMESTAMP NOT NULL,
+    event_time DATE NOT NULL,
 	-- key format suggest: path_user_ip
     event_key VARCHAR(128) NOT NULL,
 
