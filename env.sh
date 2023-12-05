@@ -18,23 +18,22 @@ export SUP_USER=$USER # default is $USER
 export SUP_ETC_DIR="/etc/supd/conf.d" # default is /etc/supd/conf.d
 export SUP_LOG_SIZE="10MB"
 export SUP_LOG_BAK="10"
-export SUP_APP_ENV="PRJ_ROOT=\\\"$PRJ_ROOT\\\",GIN_MODE=\\\"release\\\",LD_LIBRARY_PATH=\\\"$LD_LIBRARY_PATH\\\""
+export SUP_APP_ENV="PRJ_ROOT=\\\"$PRJ_ROOT\\\",GWAYLIB_LOG_LEVEL=1,GIN_MODE=\\\"release\\\",LD_LIBRARY_PATH=\\\"$LD_LIBRARY_PATH\\\""
 
 # Seting collection to sup publish
 # -------------------------------------------------
 ## Root directory to colect of project. default is etc, split with space for multiply directory.
-export PUB_ROOT_RES="etc" 
+export PUB_ROOT_RES="etc bin" 
 ## App directory to colect of application. default is public, split with space for multiply directory.
 export PUB_APP_RES="public" 
 
 # Setting GOROOT
 # -------------------------------------------------
-go_root="/usr/local/go"
-if [ -d "$go_root" ]; then
-    export GOROOT="$go_root"
+if [ -z "$GOROOT" ]; then
+    export GOROOT="/usr/local/go"
 fi
 
-# Setting GOBIN and PATH
+# Setting GOBIN to PATH
 # -------------------------------------------------
 bin_path=$GOBIN:$GOROOT/bin:
 rep=${PATH/bin_path/""}
@@ -50,7 +49,8 @@ main(){
         type curl >/dev/null 2>&1||{ echo -e >&2 "curl not found, need install at first."; return 1; }
         echo "Download sup to bin."
         mkdir -p $GOBIN&& \
-        curl https://raw.githubusercontent.com/gwaycc/supd/v1.0.3/bin/sup -o $GOBIN/sup && \
+        #curl https://raw.githubusercontent.com/gwaycc/supd/master/bin/sup -o $GOBIN/sup && \
+        curl https://raw.githubusercontent.com/gwaycc/supd/v1.0.7/bin/sup -o $GOBIN/sup && \
         chmod +x $GOBIN/sup&&echo "Download sup done."|| return 1
     fi
     # --------------------END--------------------
