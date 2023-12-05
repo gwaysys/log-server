@@ -1,4 +1,3 @@
-//
 // Example
 //
 // import gopkg.in/gomail.v2
@@ -15,10 +14,10 @@
 // defer d.Close()
 //
 // // Send the email to Bob, Cora and Dan.
-// if err := d.SendMail(m); err != nil {
-//     panic(err)
-// }
 //
+//	if err := d.SendMail(m); err != nil {
+//	    panic(err)
+//	}
 package mail
 
 import (
@@ -35,7 +34,7 @@ type MailClient struct {
 }
 
 func NewMailClient(host string, port int, username, passwd string) *MailClient {
-	d := gomail.NewPlainDialer(host, port, username, passwd)
+	d := gomail.NewDialer(host, port, username, passwd)
 	return &MailClient{dialer: d}
 }
 
@@ -71,6 +70,7 @@ func (mc *MailClient) close() (err error) {
 func (mc *MailClient) dial() error {
 	mc.mux.Lock()
 	defer mc.mux.Unlock()
+
 	if mc.client != nil {
 		return nil
 	}

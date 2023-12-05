@@ -1,12 +1,10 @@
 Implement server of github.com/gwaylib/log
 
-Base on https://github.com/gwaycc/lserver
-
 # Build
 ```
 . env.sh
 cd cmd/web
-go build
+go build # or sup build
 ```
 
 # Deploy
