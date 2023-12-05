@@ -24,6 +24,8 @@ github.com/gwaylib/errors v0.0.0-20211126090330-1931a9c4fe20/go.mod h1:+HS/JYB/L
 github.com/gwaylib/log v0.0.0-20190829041528-b6c28711ef53/go.mod h1:FwuJtWmicMfzgmySG/QzJZL5J5qiMULuWgvT4qXZTgI=
 github.com/gwaylib/log v0.0.0-20220101113752-62331cca60a8 h1:1SP6H1IDMz34moT+ejlJ0jlvyXWSAc6MEGytvwxKg9I=
 github.com/gwaylib/log v0.0.0-20220101113752-62331cca60a8/go.mod h1:zq3Y/bzQMZotPXanUMhOZUlMpBTbEeVzen94rNUIY1I=
+github.com/gwaylib/qsql v0.0.0-20231021183309-a9c99fd70a00 h1:hwg+uczmCqO1CDEueBKvu/96R7m4VOrMWOoeErg9bsI=
+github.com/gwaylib/qsql v0.0.0-20231021183309-a9c99fd70a00/go.mod h1:daFdc+rEPTdxyvG3nERLizl7YvoCoD5ml9CaCv1hvJY=
 github.com/gwaylib/redis v0.0.0-20211227074640-be0f92968270/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
 github.com/gwaylib/redis v0.0.0-20220101094530-44b7040aed7b h1:sHsqsyABU0Po8DmI64d8z3R/RL37xBGRiTordakVhvs=
 github.com/gwaylib/redis v0.0.0-20220101094530-44b7040aed7b/go.mod h1:cxir25v8NPKIh1ZSjahoUU0MFLa88RbTpO1F4C4/mQ0=
