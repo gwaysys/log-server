@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gwaycc/log-server/module/db"
 	"github.com/gwaylib/errors"
+	"github.com/gwaypg/log-server/module/db"
 )
 
 const (

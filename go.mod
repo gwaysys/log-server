@@ -1,4 +1,4 @@
-module github.com/gwaycc/log-server
+module github.com/gwaypg/log-server
 
 go 1.16
 

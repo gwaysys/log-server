@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gwaycc/log-server/module/db"
-	"github.com/gwaycc/log-server/module/mail"
+	"github.com/gwaypg/log-server/module/db"
+	"github.com/gwaypg/log-server/module/mail"
 
 	"github.com/gwaylib/database"
 	"github.com/gwaylib/errors"
