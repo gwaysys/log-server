@@ -23,10 +23,10 @@ sudo docker run -it --rm \
 #
 # # Docker参考资料：https://blog.csdn.net/boonya/article/details/74906927
 # # sudo docker login 
-# # sudo docker tag [imageid] gwaycc/$PRJ_NAME:$ver
-# # sudo docker push gwaycc/$PRJ_NAME:$ver
+# # sudo docker tag [imageid] gwaypg/$PRJ_NAME:$ver
+# # sudo docker push gwaypg/$PRJ_NAME:$ver
 # 
-# sudo docker pull gwaycc/$PRJ_NAME:$ver
+# sudo docker pull gwaypg/$PRJ_NAME:$ver
 # 
 # sudo docker run -d --restart=always \
 #     -v /etc/localtime:/etc/localtime:ro \
@@ -37,7 +37,7 @@ sudo docker run -it --rm \
 #     -w /app/src/service/app \
 #     --name $PRJ_NAME-service-app \
 #     --net=host \
-#     gwaycc/$PRJ_NAME:$ver \
+#     gwaypg/$PRJ_NAME:$ver \
 #     ./app
 # 
 # sudo docker run -d --restart=always \
@@ -49,6 +49,6 @@ sudo docker run -it --rm \
 #     -w /app/src/applet/web \
 #     --name $PRJ_NAME-service-web \
 #     --net=host \
-#     gwaycc/$PRJ_NAME:$ver \
+#     gwaypg/$PRJ_NAME:$ver \
 #     ./web
 

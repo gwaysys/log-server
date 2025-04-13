@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/gwaycc/log-server/module/db/alarm"
 	"github.com/gwaylib/errors"
 	"github.com/gwaylib/log/logger"
+	"github.com/gwaypg/log-server/module/db/alarm"
 	gomail "gopkg.in/gomail.v2"
 )
 

@@ -23,8 +23,8 @@ mkdir -p $PRJ_ROOT/bin/docker||exit 1
 # build bin data
 export CGO_ENABLED=0 GOOS=linux GOARCH=amd64
 
-goget -v -d github.com/gwaycc/supd||exit 1
-cd $GOLIB/src/github.com/gwaycc/supd||exit 1
+goget -v -d github.com/gwaypg/supd||exit 1
+cd $GOLIB/src/github.com/gwaypg/supd||exit 1
 go build||exit 1
 mkdir -p $PRJ_ROOT/bin/docker||exit 1
 mv ./supd $PRJ_ROOT/bin/docker||exit 1

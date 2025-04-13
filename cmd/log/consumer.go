@@ -6,7 +6,7 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/gwaycc/log-server/module/etc"
+	"github.com/gwaypg/log-server/module/etc"
 
 	"github.com/gwaylib/errors"
 	"github.com/gwaylib/log/logger/proto"
